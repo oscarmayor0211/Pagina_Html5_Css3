@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/scrollomatic.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/prefixfree.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700|Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+    <title>Pagina_Html5</title>
+
+    <script>
+        $(document).ready(function() {
+            $("a.scroll").scrollomatic();
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <a href="#home" class="scroll">
+            <div id="logo"></div>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#home" class="scroll">Home</a></li>
+                <li><a href="#tema" class="scroll">Temas</a></li>
+                <li><a href="#galeria" class="scroll">Galeria</a></li>
+                <li><a href="#contacto" class="scroll">Contactenos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="contenido">
+        <video autoplay loop preload="auto">
+            <source src="video/video.mp4" type="video/mp4">
+            <source src="video/video.ogv" type="video/ogv">
+            <source src="video/video.webm" type="video/webm">
+            <p>Su navegador no soporta el elemmento video</p>
+        </video>
+        <section id="home">
+            <div id="globo"></div>
+            <h2>Bienvenidos a nuestra pagina</h2>
+            <p>Un texto es una composición de signos codificados en un sistema de escritura que forma una unidad de sentido. También es una composición de caracteres imprimibles generados por un algoritmo de cifrado que, aunque no tienen sentido para cualquier
+                persona, sí puede ser descifrado por su destinatario original.</p>
+            <a href="#tema" class="scroll">Conozca mas</a>
+            <div id="abajo"></div>
+        </section>
+        <section id="tema">
+            <h3>Temas</h3>
+            <article>
+                <div id="imagen1"></div>
+                <h4>Subtitulo nivel 4</h4>
+                <p>Un texto es una composición de signos codificados en un sistema de escritura que forma una unidad de sentido. También es una composición</p>
+                <a href="#" class="scroll">Leer mas</a>
+                <div id="imagen2"></div>
+                <h4>Subtitulo nivel 4</h4>
+                <p>Un texto es una composición de signos codificados en un sistema de escritura que forma una unidad de sentido. También es una composición</p>
+                <a href="#" class="scroll">Leer mas</a>
+                <div id="imagen3"></div>
+                <h4>Subtitulo nivel 4</h4>
+                <p>Un texto es una composición de signos codificados en un sistema de escritura que forma una unidad de sentido. También es una composición</p>
+                <a href="#" class="scroll">Leer mas</a>
+            </article>
+        </section>
+        <section id="galeria">
+            <h3>Galeria</h3>
+            <div id="fotos">
+                <a href="#" title="Imagen1"><img src="img/1.jpg" alt="imagen"></a>
+                <a href="#" title="Imagen2"><img src="img/2.jpg" alt="imagen"></a>
+                <a href="#" title="Imagen3"><img src="img/3.jpg" alt="imagen"></a>
+                <a href="#" title="Imagen4"><img src="img/4.jpg" alt="imagen"></a>
+                <a href="#" title="Imagen5"><img src="img/5.jpg" alt="imagen"></a>
+                <a href="#" title="Imagen6"><img src="img/6.jpg" alt="imagen"></a>
+                <a href="#" title="Imagen7"><img src="img/7.jpg" alt="imagen"></a>
+                <a href="#" title="Imagen8"><img src="img/8.jpg" alt="imagen"></a>
+                <a href="#" title="Imagen9"><img src="img/9.jpg" alt="imagen"></a>
+            </div>
+        </section>
+        <section id="contacto">
+            <h3></h3>
+            <div id="formulario">
+                <form action="" method="post">
+                    <input type="text" name="nombre" id="" placeholder="nombre" required>
+                    <input type="email" name="email" id="" placeholder="email" required>
+                    <input type="tel" name="telefono" id="" placeholder="telefono" pattern="[0-9]{3}\s[0-9]{3}\s[0-9]{4}$" title="Debe de ser un numero telefonico valido" required>
+                    <textarea name="mensaje" cols="30" rows="10" required placeholder="El mensaje es obligatiro"></textarea>
+                    <input type="submit" value="Enviar Datos">
+                </form>
+            </div>
+            <div id="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15918.789272314065!2d-76.2131469!3d4.0819218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1585355765725!5m2!1ses-419!2sco" width="600" height="450" frameborder="0" style="border:0;"
+                    allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <a href="#contenido" class="arriba scroll">
+            </a>
+        </section>
+        <footer>
+            <p>Copyright &copy; 2020 Oscar Mayor</p>
+        </footer>
+    </main>
+</body>
+
+</html>
